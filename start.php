@@ -1,16 +1,16 @@
 <?php
 
-// Ajustes para ajustar el comportamiento de Elgg para Pesedia
+/**
+ * Pesedia UI
+ *
+ * @author Jose Alemany Bordera <jalemany1@dsic.upv.es>
+ * @author Agustín Espinosa Minguet <aespinos@upvnet.upv.es>
+ * @copyright Copyright (c) 2017, GTI-IA
+ */
 
 elgg_register_event_handler('init', 'system', 'pui_init');
 
-/**
- * Init plugin.
- */
 function pui_init() {
-
-	// Eliminamos los widgets en el perfil del grupo
-	elgg_register_plugin_hook_handler('view', 'groups/profile/widgets', 'myplugin_alter_groups_profile_widgets');
 
 	// Cambiamos el tamaño del avatar que aparece en la topbar
 	elgg_register_event_handler('pagesetup', 'system', 'profile_pagesetup_tiny', 60);
@@ -30,16 +30,6 @@ function pui_init() {
 
 	/* Remove the 'Powered by Elgg' footer */
 	//elgg_unregister_menu_item('footer','powered');
-}
-
-
-
-function myplugin_alter_groups_profile_widgets($hook, $type, $returnvalue, $params) {
-	if ($params['viewtype'] !== 'default') {
-		return $returnvalue;
-	}
-
-	return '';
 }
 
 // Cambia el avatar de la topbar a tamaño tiny. Basada en la función profile_pagesetup de "vendor/elgg/elgg/mod/profile/start.php"

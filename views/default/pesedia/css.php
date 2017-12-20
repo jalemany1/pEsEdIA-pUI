@@ -147,3 +147,48 @@ select {
 .elgg-icon-report-this:hover {
     color : Black;
 }
+
+
+.site-announcement {
+	border: 1px solid #5097CF;
+	background-color: white;
+	margin: 15px 0px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 25px;
+}
+
+#groups-tools > li {
+	width: 100%;
+}
+
+.elgg-button-submit {	
+	border: transparent;
+	background: #5097CF;
+	color: #FFF;
+}
+
+.elgg-button {	
+	border: transparent;
+	background: #5097CF;
+	color: #FFF;
+}
+
+.gm-score-positive {
+	background: #5097CF;
+}
+
+.elgg-menu-filter > li > a {
+	color: #5097CF;
+}
+
+
+.elgg-menu-filter > li {
+	border: 0px;
+	background: transparent;
+}
+
+.elgg-menu-filter {
+	border: 0px;
+}

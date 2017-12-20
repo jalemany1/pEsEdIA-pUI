@@ -13,7 +13,7 @@ function pui_init() {
 	elgg_register_plugin_hook_handler('view', 'groups/profile/widgets', 'myplugin_alter_groups_profile_widgets');
 
 	// Cambiamos el tamaño del avatar que aparece en la topbar
-	elgg_register_event_handler('pagesetup', 'system', 'profile_pagesetup_tiny', 60);
+	//elgg_register_event_handler('pagesetup', 'system', 'profile_pagesetup_tiny', 60);
 
 	// Cambios de estilo para dar el "look" Pesedia
 	elgg_extend_view('css/elgg', 'pesedia/css', 1000);
@@ -26,7 +26,10 @@ function pui_init() {
 	//elgg_register_plugin_hook_handler('register', 'menu:topbar', 'notifier_topbar_menu_setup_pesedia');
 
 	/* Improve topbar and include search in it */
-	elgg_register_event_handler('pagesetup', 'system', 'reformat_topbar', 1000);
+	//elgg_register_event_handler('pagesetup', 'system', 'reformat_topbar', 1000);
+
+	elgg_extend_view('elgg.css', 'bulma.css', 1);
+	elgg_extend_view('admin.css', 'bulma.css', 1);
 
 	/* Remove the 'Powered by Elgg' footer */
 	//elgg_unregister_menu_item('footer','powered');

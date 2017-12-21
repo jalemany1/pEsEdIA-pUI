@@ -44,8 +44,8 @@ ul.elgg-menu-wall-tools .elgg-menu-item-add-content{
 
 .profile-wall{
 	float: right;
-	width: 65.66%;
 	margin-right: 1%;
+	margin-left: 1%;
 }
 
 .profile-wall > .elgg-main,
@@ -61,6 +61,10 @@ li.elgg-item-object-gm_score_history{
 	padding: 0px 15px;
 	border: 1px solid #dcdcdc;
 	background-color: white;
+}
+
+.elgg-widgets {
+	min-height: 100 !important;
 }
 
 

@@ -11,7 +11,15 @@ $owner = elgg_get_page_owner_entity();
 		<?php echo elgg_view('profile/details'); ?>
 	</div>
 </div>
-<div class="profile-wall elgg-col-2of3 mrn">
+
+<?php
+echo elgg_view_layout('widgets', [
+	'num_columns' => 2,
+	'show_add_widgets' => false,
+]);
+?>
+
+<div class="profile-wall elgg-col-3of3 mrn">
 	<div class="elgg-main elgg-body">
 		<?php
 			elgg_push_context('wall');

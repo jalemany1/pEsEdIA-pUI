@@ -64,7 +64,7 @@ li.elgg-item-object-gm_score_history{
 }
 
 .elgg-widgets {
-	min-height: 100 !important;
+	min-height: 80px !important;
 }
 
 

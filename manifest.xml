@@ -9,8 +9,10 @@
 
 	<author>Jose Alemany Bordera</author>
 	<website>http://gti-ia.upv.es</website>
-	<copyright>(c) 2017 J. Alemany</copyright>
+	<copyright>(c) 2017 GTI-IA</copyright>
 	<license>GNU General Public License version 2</license>
+
+	<category>Pesedia</category>
 
 	<requires>
 		<type>elgg_release</type>
